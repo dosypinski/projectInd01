@@ -1,8 +1,22 @@
 
 .page-title {
   color: $color-main;
-  font-size: 34px;
-  font-weight: bold;
+  font-size: 77px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 14px;
+  padding-top: 15px;
+}
+
+.page-title::after {
+  position: absolute;
+  content: '';
+  left: 50%;
+  width: 800px;
+  height: 6px;
+  transform: translateX(-50%);
+  background: $color-main;
+  bottom: -340px;
 }
 
 .product-title {
@@ -112,6 +126,8 @@
 .icon-down {
   font-size: 44px;
   color: $color-light;
+  margin: 10px 0;
+  font-weight: 400;
 }
 
 .footer {

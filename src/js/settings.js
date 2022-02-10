@@ -7,7 +7,7 @@ export const settings = {
 
 export const select = {
   templateOf: {
-    product: '#template-product-widget',
+    product: '#template-products',
   },
 };
 
