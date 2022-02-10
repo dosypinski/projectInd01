@@ -1,0 +1,119 @@
+
+.page-title {
+  color: $color-main;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.product-title {
+  font-size: 24px;
+  color: $color-dark;
+  font-weight: bold;
+}
+
+.product-description {
+  color: $color-dark;
+  font-weight: 400;
+}
+
+.product-specs {
+  color: $color-dark;
+  font-weight: bold;
+}
+
+.product-rating {
+  color: $color-main;
+}
+
+.about-info {
+  color: $color-light;
+  font-style: italic;
+
+}
+/* HEAD */
+
+.brand-up {
+  padding: 0 0 0 44px;
+  margin: 20px 0 0 0;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  color: $color-light;
+}
+
+.brand-down {
+  padding: 5px 0 0 44px;
+  margin: 0 0 200px 0;
+  font-weight: 700;
+  letter-spacing: 4.5px;
+  font-size: 17px;
+  color: $color-light;
+}
+
+.navbar-links {
+  margin: 0;
+  padding-bottom: 170px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.navbar-link {
+  margin: 20px 0 0 0;
+  padding: 0 0 0 44px;
+  text-decoration: none;
+  color: $color-light;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.p-title-up {
+  color: $color-main;
+  font-size: 97px;
+  font-weight: 700;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 21px;
+}
+
+.p-title-down {
+  color: $color-main;
+  font-size: 97px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0;
+  margin: 0 0 60px 0;
+  position: relative;
+  letter-spacing: 21px;
+  left: 140px;
+  margin-bottom: 320px;
+}
+
+.p-title-down::after {
+  position: absolute;
+  content: '';
+  bottom: -56px;
+  left: 50%;
+  width: 280px;
+  height: 6px;
+  transform: translateX(-50%);
+  background: $color-main;
+  left: 39%;
+}
+
+.discover {
+  text-align: center;
+  font-size: 33px;
+  letter-spacing: 8px;
+  color: $color-light;
+}
+
+.icon-down {
+  font-size: 44px;
+  color: $color-light;
+}
+
+.footer {
+  text-align: center;
+}
