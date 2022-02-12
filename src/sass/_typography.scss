@@ -6,6 +6,7 @@
   text-align: center;
   letter-spacing: 14px;
   padding-top: 15px;
+  margin-bottom: 150px;
 }
 
 .page-title::after {
@@ -16,23 +17,33 @@
   height: 6px;
   transform: translateX(-50%);
   background: $color-main;
-  bottom: -340px;
+  bottom: -380px;
+  
 }
 
 .product-title {
-  font-size: 24px;
+  font-size: 46px;
   color: $color-dark;
   font-weight: bold;
+  letter-spacing: 4px;
 }
 
 .product-description {
   color: $color-dark;
-  font-weight: 400;
+  text-align: right;
+  padding-left: 40px;
+  font-size: 15px;
+  width: 350px;
+  line-height: 25px;
 }
 
 .product-specs {
   color: $color-dark;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 3px;
 }
 
 .product-rating {
