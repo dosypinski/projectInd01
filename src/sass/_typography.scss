@@ -2,23 +2,24 @@
 .page-title {
   color: $color-main;
   font-size: 77px;
-  font-weight: 700;
+  font-weight: 650;
   text-align: center;
   letter-spacing: 14px;
-  padding-top: 15px;
-  margin-bottom: 150px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  padding-bottom: 40px;
+  position: relative;
 }
 
-.page-title::after {
+.page-title:before {
+  content: "";
   position: absolute;
-  content: '';
+  bottom: 0;
   left: 50%;
   width: 800px;
   height: 6px;
   transform: translateX(-50%);
   background: $color-main;
-  bottom: -380px;
-  
 }
 
 .product-title {
@@ -29,7 +30,7 @@
 }
 
 .product-description {
-  color: $color-dark;
+  color: $color-desc;
   text-align: right;
   padding-left: 40px;
   font-size: 15px;
@@ -143,4 +144,39 @@
 
 .footer {
   text-align: center;
+}
+
+.about-text {
+  color: $color-light;
+  font-size: 36px;
+  font-style: italic;
+  letter-spacing: 2px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.about-footer {
+  text-align: end;
+  padding-right: 80px;
+}
+
+.title-contact {
+  text-align: center;
+  color: $color-main;
+  font-size: 36px;
+  letter-spacing: 8px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+}
+.title-contact:before {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  width: 750px;
+  height: 6px;
+  transform: translateX(-50%);
+  background: $color-main;
 }

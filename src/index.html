@@ -36,11 +36,47 @@
 
     </header>
       <section class="products">
-        <div class="container">
+        <div class="product-wrapper container">
           <h2 class="page-title">PRODUCTS</h2>
         </div>
-        <div class="product-wrapper container"></div>
       </section>
+      <section class="about">
+        <div class="container">
+          <h2 class="page-title">ABOUT US</h2>
+          <div class="about-container">
+            <p class="about-text">Who are we? Just a bunch of friends with a love for a good coffee and desire to create something
+              new, something original.</p>
+            <p class="about-text">Our coffees reflect us - young, wild and free. We are on the journey of new tastes...</p> 
+          </div>
+          <p class="about-text about-footer">Join us!</p>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-widget">
+          <div class="title-contact">
+            <h2>CONTACT US</h2>
+          </div>
+          <form class="form" action="mailto:example@outmail.com" method="post" enctype="text/plain">
+            <div class="form-row">
+              <label for="filed-name">NAME</label><br>
+              <input type="text" name="name" required id="filed-name">
+            </div>
+            <div class="form-row">
+              <label for="filed-name">TITLE</label><br>
+              <input type="text" name="title" required id="filed-title">
+            </div>
+            <div class="form-row">
+              <label for="field-message" class="field-message">MESSAGE</label>
+              <textarea name="message" required id="field-message"></textarea>
+            </div>
+            <div class="form-row">
+              <button type="submit" class="submit-btn">SUBMIT</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
     <script id="template-products" type="text/x-handlebars-template">
 
       <div class="product-container">
@@ -57,7 +93,7 @@
                   <p class="product-specs">ROASTING: <span class="product-rating">{{{ roasting }}}</span></p>
                   <p class="product-specs">INTENSITY: <span class="product-rating">{{{ intensity }}}</span></p>
                 </div>
-                <div class="col-5">{{{ most-popular }}}</div>
+                <div class="col-5 best">{{{ most-popular }}}</div>
               </div>
           </div>
           <div class="image-left">
@@ -79,7 +115,7 @@
               <p class="product-specs">ROASTING: <span class="product-rating">{{{ roasting }}}</span></p>
               <p class="product-specs">INTENSITY: <span class="product-rating">{{{ intensity }}}</span></p>
             </div>
-            <div class="col-5">{{{ most-popular }}}</div>
+            <div class="col-5 best">{{{ most-popular }}}</div>
           </div>
         </div>
         <div class="image">
