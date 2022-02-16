@@ -1,5 +1,7 @@
-import { settings } from './settings.js';
+import { settings, select } from './settings.js';
 import Product from './components/Product.js';
+import About from './components/About.js';
+import Contact from './components/Contact.js';
 const app = {
 
   initData: function() {
@@ -19,6 +21,22 @@ const app = {
       });
   },
 
+  initAbout: function(){
+    const thisApp = this;
+
+    thisApp.about = document.querySelector(select.containerOf.about);
+
+    new About(thisApp.about);
+  },
+
+  initContact: function(){
+    const thisApp = this;
+
+    thisApp.contact = document.querySelector(select.containerOf.contact);
+
+    new Contact(thisApp.contact);
+  },
+
   initProduct: function(){
     const thisApp = this;
 
@@ -31,6 +49,8 @@ const app = {
     const thisApp = this;
     thisApp.initData();
     thisApp.initProduct();
+    thisApp.initAbout();
+    thisApp.initContact();
   },
 };
 

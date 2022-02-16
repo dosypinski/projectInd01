@@ -16,7 +16,7 @@ class Product {
 
     const generatedHTML = templates.product(thisProduct.data);
     thisProduct.element = utils.createDOMFromHTML(generatedHTML);
-    console.log('sss', thisProduct.element);
+    console.log('product', thisProduct.element);
     const productContainer = document.querySelector(select.containerOf.product);
     productContainer.append(thisProduct.element); 
   }
