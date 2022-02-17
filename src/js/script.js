@@ -53,7 +53,7 @@ const app = {
 
     const ifFromHash = window.location.hash.replace('#/', '');
 
-    let pageMatchingHash = thisApp.pages[0].id;
+    let pageMatchingHash = 'home';
 
     for(let page of thisApp.pages){
       if(page.id == ifFromHash){
@@ -66,6 +66,7 @@ const app = {
 
     for(let link of thisApp.navLinks){
       link.addEventListener('click', function(event){
+
         const clickedElement = this;
         event.preventDefault();
 
@@ -80,10 +81,15 @@ const app = {
 
   activatePage: function(pageId){
     const thisApp = this;
-    
+
+    const homeVisibleSectionList = ['product', 'about'];
+
     /* add class "active" to matching pages, remove from non-matching*/
     for(let page of thisApp.pages){
-      page.classList.toggle(classNames.pages.active, page.id == pageId);
+
+      const condition = pageId === 'home' ? homeVisibleSectionList.includes(page.id) : page.id == pageId;
+
+      page.classList.toggle(classNames.pages.active, condition);
     }
 
     /* add class "active" to matching links, remove from non-matching*/
