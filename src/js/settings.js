@@ -9,13 +9,21 @@ export const select = {
     product: '.product-wrapper',
     about: '.about-page',
     contact: '.contact-page',
+    pages: '#pages',
   },
   nav: {
     links: '.navbar-links a',
   },
 };
 
-export const classNames = {};
+export const classNames = {
+  pages: {
+    active: 'active',
+  },
+  nav: {
+    active: 'active',
+  }
+};
 
 export const settings = {
   db: {
